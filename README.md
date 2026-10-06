@@ -1,9 +1,9 @@
 # EMi client recipe fix
 
-##简介
+  ##简介
 此mod是EMI的附属插件，只需要在客户端安装。请使用 https://github.com/Pandaismyname1/SEMI 作为前置模组，其他版本的EMI不支持。
 
-##本mod的功能
+  ##本mod的功能
 
 在Minecraft1.21.2以上的版本中，服务器不再向客户端同步没解锁的配方，这导致JEI，REI，EMI等mod失去了查看配方的功能（哈气了喵）。
 本mod实现了在26.2fabric加载器下的配方重建。其原理是：当服务器不向客户端同步配方时，自动读取本地世界的配方来代替。这样查看配方的功能就可以用了。
