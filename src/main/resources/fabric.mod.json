@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "emi-client-recipe-fix",
+	"version": "1.0.0",
+	"name": "EMi client recipe fix",
+	"description": " EMI的附属喵，当服务端没有向客户端发送配方的时候采用客户端本地配方喵，哈气了喵 ",
+	"authors": ["喵喵哈气米（MeowMeowHaqimi）"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.emi.client.recipe.client.ClientRecipeFix"
+		],
+		"client": [
+			"com.emi.client.recipe.client.ClientRecipeFixClient"
+		],
+		"emi": [
+			"com.emi.client.recipe.client.emi.ClientRecipeFixEmiPlugin"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"emi": "*"
+	}
+}
